@@ -1,5 +1,5 @@
-// Dog inherits from Animal and is also a Pet
-public class Dog extends Animal implements Pet {
+// Dog inherits from Animal
+public class Dog extends Animal {
     public Dog(String name) {
         super(name);   // this calls the constructor from animal and passes name
     }
@@ -9,9 +9,7 @@ public class Dog extends Animal implements Pet {
     public void makeSound() {
         System.out.println("Bark");
     }
-
-    // this makes our Dog a Pet
-    @Override
+ 
     public void play() {
         System.out.println("Playing fetch");
     }
